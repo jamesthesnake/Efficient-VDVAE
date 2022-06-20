@@ -13,8 +13,8 @@ def download_mnist_datasets():
     # Ignore labels
     (x_train, _), (x_test, _) = tf.keras.datasets.mnist.load_data()
 
-    x_train = x_train[:, np.newaxis, :, :]  # (60000, 28, 28, 1)
-    x_test = x_test[:, np.newaxis, :, :]  # (10000, 28, 28, 1)
+    x_train = x_train[:, np.newaxis, :, :]  # (60000, 1, 28, 28)
+    x_test = x_test[:, np.newaxis, :, :]  # (10000, 1,  28, 28)
     x_train, x_test = x_train / 255., x_test / 255.
 
     # make images of size 32x32
@@ -42,7 +42,7 @@ class Binarize(object):
 
         :return: Tensor
         """
-        img = torch.Tensor(img)
+        img = torch.tensor(img)
         return torch.Tensor(img.size()).bernoulli_(img)
 
     def __repr__(self):
@@ -69,7 +69,7 @@ class mnist_dataset(torch.utils.data.Dataset):
             img = self.images[idx]
             img = transform(img)
             return img
-        elif self.mode in ['val', 'div_stats']:
+        elif self.mode in ['val', 'div_stats', 'test']:
             img = self.images[idx]
             return img
         elif self.mode == 'encode':
@@ -80,10 +80,12 @@ class mnist_dataset(torch.utils.data.Dataset):
             raise ValueError(f'Unknown Mode {self.mode}')
 
     def __len__(self):
-        if self.mode == 'div_stats':
-            return round(len(self.images) * hparams.synthesis.div_stats_subset_ratio)
-        else:
+        if self.mode in ['train', 'test', 'encode']:
             return len(self.images)
+        elif self.mode == 'val':
+            return hparams.val.n_samples_for_validation
+        elif self.mode == 'div_stats':
+            return round(len(self.images) * hparams.synthesis.div_stats_subset_ratio)
 
 
 def train_val_data_mnist(world_size, rank):
@@ -113,13 +115,14 @@ def train_val_data_mnist(world_size, rank):
 
 def synth_mnist_data():
     _, _, test_images = download_mnist_datasets()
-    synth_mnist = mnist_dataset(test_images, 'val')
+    synth_mnist = mnist_dataset(test_images, 'test')
     synth_loader = torch.utils.data.DataLoader(
         dataset=synth_mnist,
         batch_size=hparams.synthesis.batch_size,
         shuffle=True,
         pin_memory=True,
-        num_workers=hparams.run.num_cpus)
+        num_workers=hparams.run.num_cpus,
+        drop_last=True)
     return synth_loader
 
 

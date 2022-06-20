@@ -41,8 +41,8 @@ We provide checkpoints of pre-trained models on MNIST, CIFAR-10, Imagenet 32x32,
     <tbody align="center">
         <tr>
             <td align="center">MNIST</td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/binarized_mnist_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/binarized_mnist_baseline_checkpoints.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/binarized_mnist_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/binarized_mnist_baseline_checkpoints.zip">link</a></td>
             <td align="center">79.09 nats</td>
@@ -57,8 +57,8 @@ We provide checkpoints of pre-trained models on MNIST, CIFAR-10, Imagenet 32x32,
         </tr>
         <tr>
             <td align="center">Imagenet 32x32</td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/imagenet32_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/imagenet32_baseline_checkpoints.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/imagenet32_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/imagenet32_baseline_checkpoints.zip">link</a></td>
             <td align="center">3.58 bits/dim</td>
@@ -67,22 +67,22 @@ We provide checkpoints of pre-trained models on MNIST, CIFAR-10, Imagenet 32x32,
             <td align="center">Imagenet 64x64</td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/imagenet64_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/imagenet64_baseline_checkpoints.zip">link</a></td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/imagenet64_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/imagenet64_baseline_checkpoints.zip">link</a></td>
             <td align="center">3.30 bits/dim</td>
         </tr>
         <tr>
             <td align="center">CelebA 64x64</td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebA64_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebA64_baseline_checkpoints.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebA64_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebA64_baseline_checkpoints.zip">link</a></td>
             <td align="center">1.83 bits/dim</td>
         </tr>
         <tr>
             <td align="center">CelebAHQ 256x256 (5-bits)</td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebAHQ256_5bits_baseline_checkpoints.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebAHQ256_5bits_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebAHQ256_5bits_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebAHQ256_5bits_baseline_checkpoints.zip">link</a></td>
             <td align="center">0.51 bits/dim</td>
@@ -97,8 +97,8 @@ We provide checkpoints of pre-trained models on MNIST, CIFAR-10, Imagenet 32x32,
         </tr>
         <tr>
             <td align="center">FFHQ 256x256 (5-bits)</td>
-            <td align="center">Queued</td>
-            <td align="center">Queued</td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/ffhq256_5bits_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/ffhq256_8bits_baseline_checkpoints.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/ffhq256_5bits_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/ffhq256_5bits_baseline_checkpoints.zip">link</a></td>
             <td align="center">0.53 bits/dim</td>
@@ -115,16 +115,16 @@ We provide checkpoints of pre-trained models on MNIST, CIFAR-10, Imagenet 32x32,
             <td align="center">CelebAHQ 1024x1024</td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebAHQ1024_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/celebAHQ1024_baseline_checkpoints.zip">link</a></td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebAHQ1024_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/celebAHQ1024_baseline_checkpoints.zip">link</a></td>
             <td align="center">1.01 bits/dim</td>
         </tr>
         <tr>
             <td align="center">FFHQ 1024x1024</td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/ffhq1024_baseline_logs.zip">link</a></td>
             <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/Pytorch/ffhq1024_baseline_checkpoints.zip">link</a></td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/ffhq1024_baseline_logs.zip">link</a></td>
+            <td align="center"><a href="https://storage.googleapis.com/dessa-public-files/efficient_vdvae/JAX/ffhq1024_baseline_checkpoints.zip">link</a></td>
             <td align="center">2.30 bits/dim</td>
         </tr>
     </tbody>
@@ -161,7 +161,13 @@ To create the docker image used in both the Pytorch and JAX implementations:
 cd build  
 docker build -t efficient_vdvae_image .  
 ```  
-  
+
+### Note:
+- If using JAX library on ampere architecture GPUs, it's possible to face a random GPU hanging problem when training on multiple GPUs 
+([issue](https://github.com/google/jax/issues/8475)). In that case, we provide an 
+[alternative docker image](https://github.com/Rayhane-mamah/Efficient-VDVAE/blob/main/build/ampere_Dockerfile) with an older version of JAX to bypass the issue until a solution is 
+found. 
+
 All code executions should be done within a docker container. To start the docker container, we provide a utility script:  
   
 ```  
@@ -236,6 +242,10 @@ sh reset.sh <run.name>  # <run.name> is the first field in hparams.cfg
 ### Note:  
   
 - To make things easier for new users, we provide example `hparams.cfg` files that can be used under the [egs](https://github.com/Rayhane-mamah/Efficient-VDVAE/tree/main/egs) folder. Detailed description of the role of each parameter is also inside [hparams.cfg](https://github.com/Rayhane-mamah/Efficient-VDVAE/blob/main/jax/hparams.cfg).
+- Hparams in [egs](https://github.com/Rayhane-mamah/Efficient-VDVAE/tree/main/egs) are to be viewed **only** as guiding examples, they are not meant to be exactly similar to pre
+-trained checkpoints or experiments done in the paper.
+- While the example hparams under the naming convention `..._baseline.cfg` are not exactly the hparams of `C2` models in the paper (pre-trained checkpoints), they are easier to 
+  design models that achieve the same performance and can be treated as equivalents to `C2` models.
   
 ## Monitoring the training process  
   

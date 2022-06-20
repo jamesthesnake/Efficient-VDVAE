@@ -51,8 +51,9 @@ class MinMax(object):
         :return: Tensor
         """
         img = np.asarray(img)
-        img = img / (2 ** hparams.data.num_bits - 1)
 
+        shift = scale = (2 ** 8 - 1) / 2
+        img = (img - shift) / scale  # Images are between [-1, 1]
         return torch.tensor(img).permute(2, 0, 1).contiguous().float()
 
     def __repr__(self):
@@ -72,6 +73,7 @@ else:
     ])
 
 valid_transform = transforms.Compose([
+    Normalize(),
     MinMax(),
 ])
 
@@ -147,7 +149,7 @@ def synth_cifar_data():
         shuffle=True,
         pin_memory=True,
         num_workers=hparams.run.num_cpus,
-        drop_last=False)
+        drop_last=True)
     return synth_loader
 
 
